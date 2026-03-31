@@ -1,0 +1,44 @@
+name: Selenium Test Suite - Matrix Strategy
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: [chrome, firefox] # Tạo 2 job chạy song song
+      fail-fast: false           # Chrome fail không dừng Firefox
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Cài Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Chạy test (${{ matrix.browser }})
+        working-directory: ./bai3
+        run: mvn clean test -Dbrowser=${{ matrix.browser }} -Denv=dev -DsuiteXmlFile=testng-smoke.xml
+        env:
+           APP_USERNAME: ${{ secrets.SAUCEDEMO_USERNAME }}
+           APP_PASSWORD: ${{ secrets.SAUCEDEMO_PASSWORD }}
+
+      - name: Lưu kết quả test
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.browser }} # 2 artifact riêng biệt
+          path: |
+            bai3/target/surefire-reports/
+            bai3/target/screenshots/
+          retention-days: 30
