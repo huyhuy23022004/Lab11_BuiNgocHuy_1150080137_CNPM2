@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "TC01_LoginSuccess",
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  {
+    "testCase": "TC02_LoginFail",
+    "username": "standard_user",
+    "password": "wrong_password"
+  }
+]
