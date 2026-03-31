@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  testng.xml - Bài 2: Page Objects SauceDemo
+  parallel="methods" thread-count="3" → 3 Chrome mở cùng lúc
+  Tổng: 7 test method (3 LoginTest + 4 CartTest) >= 6 theo yêu cầu
+-->
+<suite name="Bai2 - Page Objects Suite"
+       parallel="methods"
+       thread-count="3"
+       verbose="2">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env"     value="dev"/>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.lab9.bai2.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Tests">
+        <classes>
+            <class name="com.lab9.bai2.CartTest"/>
+        </classes>
+    </test>
+
+</suite>

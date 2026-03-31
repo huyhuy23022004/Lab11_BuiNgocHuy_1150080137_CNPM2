@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- 
+    Áp dụng Đăng ký RetryListener vào testng.xml trong thẻ <listeners> theo đúng yêu cầu Bài 6 
+-->
+<suite name="Bai6 - Flaky Test Simulation" verbose="2">
+    <listeners>
+        <listener class-name="com.lab9.bai6.RetryListener" />
+    </listeners>
+
+    <test name="Flaky Verification">
+        <classes>
+            <class name="com.lab9.bai6.FlakySimulationTest" />
+        </classes>
+    </test>
+</suite>

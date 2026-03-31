@@ -1,0 +1,20 @@
+[
+  {
+    "testCase": "TC01_LoginSuccess",
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "expectedResult": "login_success"
+  },
+  {
+    "testCase": "TC02_LoginWrongPassword",
+    "username": "standard_user",
+    "password": "wrong_password",
+    "expectedResult": "Username and password do not match"
+  },
+  {
+    "testCase": "TC03_LoginLockedUser",
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expectedResult": "Sorry, this user has been locked out"
+  }
+]

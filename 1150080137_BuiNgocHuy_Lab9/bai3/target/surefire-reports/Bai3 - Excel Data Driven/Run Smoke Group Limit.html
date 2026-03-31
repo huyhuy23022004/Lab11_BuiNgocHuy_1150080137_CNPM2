@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>TestNG:  Run Smoke Group Limit</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run Smoke Group Limit</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 17 19:40:13 GMT+07:00 2026</td>
+</tr>
+<tr><td>Total time:</td><td>44 seconds (44363 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>regression </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: BoundaryCases, standard_user, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Username and password do not match, B02 - Password nhập dài trên 200 length</td>
+<td></td>
+<td>1</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: NegativeCases, , secret_sauce, Username is required, N03 - Username bị bỏ trống</td>
+<td></td>
+<td>2</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: NegativeCases, standard_user, wrong_pass, Username and password do not match, N01 - Sai password tiêu chuẩn</td>
+<td></td>
+<td>2</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: NegativeCases, invalid_user, invalid_pass, Username and password do not match, N05 - Username và mẩu khâu sai hoàn toàn</td>
+<td></td>
+<td>1</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: SmokeCases, standard_user, secret_sauce, inventory.html, Test 01 - Login tiêu chuẩn</td>
+<td></td>
+<td>1</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: NegativeCases, standard_user, , Password is required, N04 - Password bị bỏ trống</td>
+<td></td>
+<td>0</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: BoundaryCases, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, secret_sauce, Username and password do not match, B01 - Username nhập quá số lượng tối đa max-lenght kí tự > 200</td>
+<td></td>
+<td>2</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: SmokeCases, problem_user, secret_sauce, inventory.html, Test 02 - Login user hay lỗi</td>
+<td></td>
+<td>1</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: NegativeCases, locked_out_user, secret_sauce, locked out, N02 - Tài khoản đã bị block</td>
+<td></td>
+<td>2</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: BoundaryCases, nguyen' OR '1' ='1, pass, Username and password do not match, B03 - SQL pattern injection đơn giản vào User</td>
+<td></td>
+<td>2</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: SmokeCases, performance_glitch_user, secret_sauce, inventory.html, Test 03 - Login user tải lâu</td>
+<td></td>
+<td>5</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+<tr>
+<td title='com.lab9.bai3.LoginExcelTest.testDynamicLogin()'><b>testDynamicLogin</b><br>Test class: com.lab9.bai3.LoginExcelTest ([BoundaryCases] B04 - Mã độc XSS nhúng thử qua input fields.)<br>Parameters: BoundaryCases, <script>alert(1)</script>, secret_sauce, Username and password do not match, B04 - Mã độc XSS nhúng thử qua input fields.</td>
+<td></td>
+<td>2</td>
+<td>com.lab9.bai3.LoginExcelTest@65466a6a</td></tr>
+</table><p>
+</body>
+</html>

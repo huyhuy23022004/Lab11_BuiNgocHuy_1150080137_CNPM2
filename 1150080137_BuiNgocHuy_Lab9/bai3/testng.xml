@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  Quy định bài 3:
+   - Groups "smoke" chỉ đọc duy nhất 'SmokeCases'
+   - Groups "regression" đọc gộp toàn bộ
+-->
+<suite name="Bai3 - Excel Data Driven" verbose="2">
+
+    <!-- Run SMOKE TEST 1 BẬN CHO LẦN ĐẦU (chỉ đọc sheet SmokeCases, chạy 3 tests) -->
+    <!-- Khi muốn chạy Regression -> Lấy giá trị thành 'regression' -->
+    <test name="Run Smoke Group Limit">
+        <groups>
+            <!-- 
+            Bạn đổi tên run ở đây để kiểm chứng:
+            'smoke': chạy 3
+            'regression': chạy 12 (toàn bộ)
+            -->
+            <run>
+                <include name="regression" />
+            </run>
+        </groups>
+        
+        <classes>
+            <class name="com.lab9.bai3.LoginExcelTest"/>
+        </classes>
+    </test>
+
+</suite>

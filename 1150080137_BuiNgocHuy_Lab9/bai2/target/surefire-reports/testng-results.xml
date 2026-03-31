@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-17T19:23:40 GMT+07:00" name="Bai2 - Page Objects Suite" finished-at="2026-03-17T19:23:53 GMT+07:00" duration-ms="12945">
+    <groups>
+    </groups>
+    <test started-at="2026-03-17T19:23:40 GMT+07:00" name="Login Tests" finished-at="2026-03-17T19:23:42 GMT+07:00" duration-ms="2695">
+      <class name="com.lab9.bai2.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:40 GMT+07:00" name="setUp" finished-at="2026-03-17T19:23:41 GMT+07:00" duration-ms="1228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:40 GMT+07:00" name="setUp" finished-at="2026-03-17T19:23:41 GMT+07:00" duration-ms="1231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:40 GMT+07:00" name="setUp" finished-at="2026-03-17T19:23:41 GMT+07:00" duration-ms="1228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginLockedUser()[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:41 GMT+07:00" name="testLoginLockedUser" description="TC03 - Đăng nhập tài khoản bị locked → hiển thị error" finished-at="2026-03-17T19:23:42 GMT+07:00" duration-ms="1278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginLockedUser -->
+        <test-method signature="testLoginWrongPassword()[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:41 GMT+07:00" name="testLoginWrongPassword" description="TC02 - Đăng nhập sai mật khẩu → hiển thị error" finished-at="2026-03-17T19:23:42 GMT+07:00" duration-ms="1326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPassword -->
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:41 GMT+07:00" name="testLoginSuccess" description="TC01 - Đăng nhập thành công → InventoryPage hiển thị" finished-at="2026-03-17T19:23:42 GMT+07:00" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:42 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:23:42 GMT+07:00" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginSuccess status=SUCCESS method=LoginTest.testLoginSuccess()[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:42 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:23:42 GMT+07:00" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginLockedUser status=SUCCESS method=LoginTest.testLoginLockedUser()[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d]" started-at="2026-03-17T19:23:42 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:23:42 GMT+07:00" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWrongPassword status=SUCCESS method=LoginTest.testLoginWrongPassword()[pri:0, instance:com.lab9.bai2.LoginTest@3c9d0b9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.bai2.LoginTest -->
+    </test> <!-- Login Tests -->
+    <test started-at="2026-03-17T19:23:42 GMT+07:00" name="Cart Tests" finished-at="2026-03-17T19:23:53 GMT+07:00" duration-ms="10239">
+      <class name="com.lab9.bai2.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:42 GMT+07:00" name="setUp" finished-at="2026-03-17T19:23:43 GMT+07:00" duration-ms="708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:42 GMT+07:00" name="setUp" finished-at="2026-03-17T19:23:43 GMT+07:00" duration-ms="707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:42 GMT+07:00" name="setUp" finished-at="2026-03-17T19:23:43 GMT+07:00" duration-ms="707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddItemByNameAndVerifyInCart()[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:43 GMT+07:00" name="testAddItemByNameAndVerifyInCart" description="TC05 - Thêm sản phẩm theo tên → kiểm tra trong giỏ hàng" finished-at="2026-03-17T19:23:44 GMT+07:00" duration-ms="1241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddItemByNameAndVerifyInCart -->
+        <test-method signature="testCartEmptyReturnsZero()[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:43 GMT+07:00" name="testCartEmptyReturnsZero" description="TC06 - Giỏ hàng trống → getItemCount() = 0, không crash" finished-at="2026-03-17T19:23:53 GMT+07:00" duration-ms="9416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartEmptyReturnsZero -->
+        <test-method signature="testAddFirstItemToCart()[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:43 GMT+07:00" name="testAddFirstItemToCart" description="TC04 - Thêm sản phẩm đầu tiên vào giỏ hàng" finished-at="2026-03-17T19:23:44 GMT+07:00" duration-ms="1155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddFirstItemToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:44 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:23:44 GMT+07:00" duration-ms="112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddFirstItemToCart status=SUCCESS method=CartTest.testAddFirstItemToCart()[pri:0, instance:com.lab9.bai2.CartTest@470f1802] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:44 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:23:44 GMT+07:00" duration-ms="104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddItemByNameAndVerifyInCart status=SUCCESS method=CartTest.testAddItemByNameAndVerifyInCart()[pri:0, instance:com.lab9.bai2.CartTest@470f1802] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:44 GMT+07:00" name="setUp" finished-at="2026-03-17T19:23:45 GMT+07:00" duration-ms="638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRemoveItemFromCart()[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:45 GMT+07:00" name="testRemoveItemFromCart" description="TC07 - Add 2 sản phẩm, remove 1 → còn 1 trong giỏ" finished-at="2026-03-17T19:23:46 GMT+07:00" duration-ms="1338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveItemFromCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:46 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:23:46 GMT+07:00" duration-ms="124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRemoveItemFromCart status=SUCCESS method=CartTest.testRemoveItemFromCart()[pri:0, instance:com.lab9.bai2.CartTest@470f1802] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai2.CartTest@470f1802]" started-at="2026-03-17T19:23:53 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:23:53 GMT+07:00" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCartEmptyReturnsZero status=SUCCESS method=CartTest.testCartEmptyReturnsZero()[pri:0, instance:com.lab9.bai2.CartTest@470f1802] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.bai2.CartTest -->
+    </test> <!-- Cart Tests -->
+  </suite> <!-- Bai2 - Page Objects Suite -->
+</testng-results>

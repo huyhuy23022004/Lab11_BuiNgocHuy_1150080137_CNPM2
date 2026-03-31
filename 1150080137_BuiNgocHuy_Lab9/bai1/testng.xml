@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng.xml - Cấu hình chạy test song song để kiểm thử BaseTest ThreadLocal
+
+    parallel="methods"   → mỗi @Test method chạy trên một thread riêng
+    thread-count="3"     → tối đa 3 thread đồng thời = 3 cửa sổ Chrome mở cùng lúc
+
+    Tham số browser và env được truyền vào @BeforeMethod của BaseTest
+    qua @Parameters + @Optional (có giá trị mặc định nên không bắt buộc khai báo)
+-->
+<suite name="Bai1 - BasePage BaseTest Suite"
+       parallel="methods"
+       thread-count="3"
+       verbose="2">
+
+    <!-- Tham số toàn suite - truyền vào @BeforeMethod của BaseTest -->
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env"     value="dev"/>
+
+    <test name="Login Tests - Parallel 3 Chrome Windows">
+        <classes>
+            <class name="com.lab9.bai1.LoginTest">
+                <methods>
+                    <!-- 3 method này sẽ chạy song song trên 3 thread/3 Chrome -->
+                    <include name="testLoginSuccess"/>
+                    <include name="testLoginWrongPassword"/>
+                    <include name="testLoginLockedUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

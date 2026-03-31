@@ -1,0 +1,37 @@
+[
+    {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "role": "admin",
+        "expectSuccess": true,
+        "description": "JSON01 - Dang nhap thanh cong voi user chuan"
+    },
+    {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "role": "guest",
+        "expectSuccess": false,
+        "description": "JSON02 - That bai do User bi lock"
+    },
+    {
+        "username": "standard_user",
+        "password": "sai_password",
+        "role": "guest",
+        "expectSuccess": false,
+        "description": "JSON03 - That bai do nhap sai password"
+    },
+    {
+        "username": "",
+        "password": "secret_sauce",
+        "role": "guest",
+        "expectSuccess": false,
+        "description": "JSON04 - That bai vi chua nhap user name"
+    },
+    {
+        "username": "problem_user",
+        "password": "secret_sauce",
+        "role": "user",
+        "expectSuccess": true,
+        "description": "JSON05 - Dang nhap thanh cong voi user hay gay loi"
+    }
+]

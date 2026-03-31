@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Bai5 - Đa Môi Trường Suite" verbose="2">
+    <!-- Cung cấp tham số FallBack Nếu không gõ lệnh maven -Denv=  -->
+    <parameter name="env" value="${env}"/>
+
+    <test name="Environment Config Testing">
+        <classes>
+            <class name="com.lab9.bai5.DemoEnvTest" />
+        </classes>
+    </test>
+</suite>

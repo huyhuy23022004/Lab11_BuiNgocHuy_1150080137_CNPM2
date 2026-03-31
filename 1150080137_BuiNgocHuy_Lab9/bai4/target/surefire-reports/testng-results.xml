@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-17T19:59:33 GMT+07:00" name="Bai4 - JSON and Faker Data-Driven Suite" finished-at="2026-03-17T19:59:47 GMT+07:00" duration-ms="13938">
+    <groups>
+    </groups>
+    <test started-at="2026-03-17T19:59:33 GMT+07:00" name="JSON Login Tests" finished-at="2026-03-17T19:59:43 GMT+07:00" duration-ms="9446">
+      <class name="com.lab9.bai4.UserLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:33 GMT+07:00" name="setUp" finished-at="2026-03-17T19:59:35 GMT+07:00" duration-ms="1131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:35 GMT+07:00" name="testLoginWithJsonData" data-provider="jsonLoginProvider" finished-at="2026-03-17T19:59:36 GMT+07:00" duration-ms="1080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{user='standard_user', role='admin', success=true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithJsonData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:36 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:59:36 GMT+07:00" duration-ms="129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithJsonData status=SUCCESS method=UserLoginTest.testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:36 GMT+07:00" name="setUp" finished-at="2026-03-17T19:59:36 GMT+07:00" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:36 GMT+07:00" name="testLoginWithJsonData" data-provider="jsonLoginProvider" finished-at="2026-03-17T19:59:37 GMT+07:00" duration-ms="1006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{user='locked_out_user', role='guest', success=false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithJsonData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:37 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:59:38 GMT+07:00" duration-ms="100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithJsonData status=SUCCESS method=UserLoginTest.testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:38 GMT+07:00" name="setUp" finished-at="2026-03-17T19:59:38 GMT+07:00" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:38 GMT+07:00" name="testLoginWithJsonData" data-provider="jsonLoginProvider" finished-at="2026-03-17T19:59:39 GMT+07:00" duration-ms="981" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{user='standard_user', role='guest', success=false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithJsonData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:39 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:59:39 GMT+07:00" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithJsonData status=SUCCESS method=UserLoginTest.testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:39 GMT+07:00" name="setUp" finished-at="2026-03-17T19:59:40 GMT+07:00" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:40 GMT+07:00" name="testLoginWithJsonData" data-provider="jsonLoginProvider" finished-at="2026-03-17T19:59:41 GMT+07:00" duration-ms="1012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{user='', role='guest', success=false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithJsonData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:41 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:59:41 GMT+07:00" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithJsonData status=SUCCESS method=UserLoginTest.testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:41 GMT+07:00" name="setUp" finished-at="2026-03-17T19:59:42 GMT+07:00" duration-ms="595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:42 GMT+07:00" name="testLoginWithJsonData" data-provider="jsonLoginProvider" finished-at="2026-03-17T19:59:43 GMT+07:00" duration-ms="1015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{user='problem_user', role='user', success=true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithJsonData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002]" started-at="2026-03-17T19:59:43 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:59:43 GMT+07:00" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithJsonData status=SUCCESS method=UserLoginTest.testLoginWithJsonData(com.lab9.bai4.UserData)[pri:0, instance:com.lab9.bai4.UserLoginTest@670002] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.bai4.UserLoginTest -->
+    </test> <!-- JSON Login Tests -->
+    <test started-at="2026-03-17T19:59:43 GMT+07:00" name="Faker Checkout Tests" finished-at="2026-03-17T19:59:47 GMT+07:00" duration-ms="4477">
+      <class name="com.lab9.bai4.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.lab9.bai4.CheckoutTest@6a28ffa4]" started-at="2026-03-17T19:59:43 GMT+07:00" name="setUp" finished-at="2026-03-17T19:59:43 GMT+07:00" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutWithRandomData()[pri:0, instance:com.lab9.bai4.CheckoutTest@6a28ffa4]" started-at="2026-03-17T19:59:43 GMT+07:00" name="testCheckoutWithRandomData" description="Test Data-driven ngẫu nhiên qua JavaFaker" finished-at="2026-03-17T19:59:45 GMT+07:00" duration-ms="1582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutWithRandomData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai4.CheckoutTest@6a28ffa4]" started-at="2026-03-17T19:59:45 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:59:45 GMT+07:00" duration-ms="110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheckoutWithRandomData status=SUCCESS method=CheckoutTest.testCheckoutWithRandomData()[pri:0, instance:com.lab9.bai4.CheckoutTest@6a28ffa4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.lab9.bai4.CheckoutTest@6a28ffa4]" started-at="2026-03-17T19:59:45 GMT+07:00" name="setUp" finished-at="2026-03-17T19:59:46 GMT+07:00" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutWithRandomData()[pri:0, instance:com.lab9.bai4.CheckoutTest@6a28ffa4]" started-at="2026-03-17T19:59:46 GMT+07:00" name="testCheckoutWithRandomData" description="Test Data-driven ngẫu nhiên qua JavaFaker" finished-at="2026-03-17T19:59:47 GMT+07:00" duration-ms="1478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutWithRandomData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.bai4.CheckoutTest@6a28ffa4]" started-at="2026-03-17T19:59:47 GMT+07:00" name="tearDown" finished-at="2026-03-17T19:59:47 GMT+07:00" duration-ms="102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheckoutWithRandomData status=SUCCESS method=CheckoutTest.testCheckoutWithRandomData()[pri:0, instance:com.lab9.bai4.CheckoutTest@6a28ffa4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.bai4.CheckoutTest -->
+    </test> <!-- Faker Checkout Tests -->
+  </suite> <!-- Bai4 - JSON and Faker Data-Driven Suite -->
+</testng-results>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Bai5 - Đa Môi Trường Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="env" value="staging"/>
+  <test thread-count="5" name="Environment Config Testing(failed)" verbose="0">
+    <classes>
+      <class name="com.lab9.bai5.DemoEnvTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testEnvironmentConfiguration"/>
+        </methods>
+      </class> <!-- com.lab9.bai5.DemoEnvTest -->
+    </classes>
+  </test> <!-- Environment Config Testing(failed) -->
+</suite> <!-- Failed suite [Bai5 - Đa Môi Trường Suite] -->

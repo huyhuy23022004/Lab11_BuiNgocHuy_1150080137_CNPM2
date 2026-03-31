@@ -1,0 +1,6 @@
+{
+    "java.import.maven.enabled": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.import.exclusions": [],
+    "java.project.referencedLibraries": []
+}
