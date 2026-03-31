@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng-smoke.xml - Cấu hình chạy test trên GitHub Actions CI/CD
+    Chạy trình duyệt headless (được cấu hình trong DriverFactory).
+-->
+<suite name="Selenium CI Suite" parallel="methods" thread-count="2" verbose="2">
+
+    <!-- Các tham số này có thể bị ghi đè bởi mvn clean test -Dbrowser=... -->
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env" value="dev"/>
+
+    <test name="Smoke Tests">
+        <classes>
+            <class name="com.automation.tests.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
