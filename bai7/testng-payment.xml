@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng-payment.xml - Nhóm các test case dành riêng cho tính năng thanh toán
+    Được Trigger tự động bởi job payment-test trên GitHub Actions
+-->
+<suite name="Payment Feature Suite" parallel="methods" thread-count="2">
+
+    <parameter name="browser" value="chrome"/>
+    
+    <test name="VPBank Installment Integration Tests">
+        <!-- 
+           Trong thực tế, bạn sẽ chọn lọc các class liên quan đến Payment.
+           Ở đây em demo bằng cách chạy LoginTest cũ làm placeholder.
+        -->
+        <classes>
+            <class name="com.automation.tests.LoginTest"/>
+            <class name="com.automation.tests.CartTest"/>
+        </classes>
+    </test>
+
+</suite>
