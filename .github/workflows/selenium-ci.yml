@@ -1,0 +1,44 @@
+name: Selenium Test Suite
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: # Cho phép bấm nút chạy thủ công
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    
+    # CẢI TIẾN 1: Thêm timeout để tránh job bị treo làm tốn quota phút chạy CI
+    timeout-minutes: 15 
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Cài đặt Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          # Cache maven đã có sẵn ở đây sẽ tối ưu hóa tốc độ build
+          cache: maven 
+
+      - name: Chạy Selenium Tests
+        # CẢI TIẾN 2: Thêm -B (batch-mode) để log của maven gọn gàng hơn, dễ debug trên CI
+        run: mvn -B clean test -Dbrowser=chrome -Denv=dev -DsuiteXmlFile=testng-smoke.xml
+        env:
+           APP_PASSWORD: ${{ secrets.SAUCEDEMO_PASSWORD }}
+
+      - name: Lưu kết quả test
+        if: always() # Luôn chạy kể cả khi test trên bị fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: |
+            target/surefire-reports/
+            target/screenshots/
+          # CẢI TIẾN 3: Rút ngắn thời gian lưu từ 30 ngày xuống 7 ngày để tiết kiệm storage quota của GitHub
+          retention-days: 7

@@ -1,0 +1,30 @@
+# Maven / Java
+target/
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.idea_modules/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Test Outputs / Selenium Reports
+test-output/
+screenshots/
+target/surefire-reports/
+target/allure-results/
+allure-results/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
