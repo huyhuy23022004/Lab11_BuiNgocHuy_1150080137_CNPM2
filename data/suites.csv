@@ -1,4 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2294","TC04 - Username rỗng","Selenium CI Suite","2026-08-18","passed","2026-08-18","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginEmptyUsername"
-"Kiểm thử đăng nhập vào hệ thống với thông tin chính danh.","2784","TC01 - Đăng nhập thành công với tài khoản hợp lệ","Selenium CI Suite","2026-08-18","passed","2026-08-18","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginSuccess"
-"","1114","TC02 - Sai mật khẩu hiển thị thông báo lỗi","Selenium CI Suite","2026-08-18","passed","2026-08-18","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginWrongPassword"
+"Kiểm thử đăng nhập vào hệ thống với thông tin chính danh.","1963","TC01 - Đăng nhập thành công với tài khoản hợp lệ","Selenium CI Suite","2026-08-19","passed","2026-08-19","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginSuccess"
+"","2036","TC04 - Username rỗng","Selenium CI Suite","2026-08-19","passed","2026-08-19","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginEmptyUsername"
+"","1","setUp","Selenium CI Suite","2026-08-19","broken","2026-08-19","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","setUp"
+"","1224","TC02 - Sai mật khẩu hiển thị thông báo lỗi","Selenium CI Suite","2026-08-19","passed","2026-08-19","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginWrongPassword"
