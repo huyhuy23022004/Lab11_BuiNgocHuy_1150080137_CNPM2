@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2234","TC04 - Username rỗng","Selenium CI Suite","2026-11-20","passed","2026-11-20","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginEmptyUsername"
-"Kiểm thử đăng nhập vào hệ thống với thông tin chính danh.","2368","TC01 - Đăng nhập thành công với tài khoản hợp lệ","Selenium CI Suite","2026-11-20","passed","2026-11-20","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginSuccess"
-"","1121","TC02 - Sai mật khẩu hiển thị thông báo lỗi","Selenium CI Suite","2026-11-20","passed","2026-11-20","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginWrongPassword"
+"","1449","TC04 - Username rỗng","Selenium CI Suite","2026-11-23","passed","2026-11-23","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginEmptyUsername"
+"Kiểm thử đăng nhập vào hệ thống với thông tin chính danh.","2194","TC01 - Đăng nhập thành công với tài khoản hợp lệ","Selenium CI Suite","2026-11-23","passed","2026-11-23","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginSuccess"
+"","665","TC02 - Sai mật khẩu hiển thị thông báo lỗi","Selenium CI Suite","2026-11-23","passed","2026-11-23","com.automation.tests.LoginTest","Smoke Tests","com.automation.tests.LoginTest","testLoginWrongPassword"
